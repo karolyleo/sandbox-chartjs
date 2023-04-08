@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link href="styling/profile.css" rel="stylesheet">
+  <link href="layout.css">
+  <link href="reset.css">
+  <script src="javascript/profile.js"></script>
+</head>
+<body>
+<div class="page-wrapper">
+  <div id="profile-section">
+    <div id="profile-pic"></div>
+    <div id="profile-info">
+      <div>Reg.graham</div>
+      <div>Reg@email.com</div>
+    </div>
+    <button id="profile-logout">Logout</button>
+  </div>
+  <hr id="main-hr">
+  <!-- Tab links -->
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'myClients')" id="defaultOpen">My Clients</button>
+    <button class="tablinks" onclick="openCity(event, 'Personal-Stats')">Personal Stats</button>
+    <button class="tablinks"><a id="program-button" href="https://docs.google.com/spreadsheets/d/1QS4v3Cp_yAYcZDhlFfuECqUV84Wvex69/edit#gid=122619846">Program</a></button>
+    <button class="tablinks" onclick="openCity(event, 'Messages')">Messages</button>
+  </div>
+
+  <!-- Tab content -->
+  <div id="Messages" class="tabcontent">
+    <div class="tab">
+      <button class="sublinks" onclick="openCity2(event, 'direct')" id="defaultOpen2">Direct Message</button>
+      <button class="sublinks" onclick="openCity2(event, 'search')">Search</button>
+      <button class="sublinks" onclick="openCity2(event, 'request')">Request</button>
+    </div>
+
+    <!-- Tab content -->
+    <div id="direct" class="subcontent">
+      <!--    Location all message cards are stored    -->
+      <div class="media-scroller">
+        <div id="contents"></div>
+      </div>
+    </div>
+
+    <div id="search" class="subcontent">
+      <div class="media-scroller">
+        <fieldset>
+          <form>
+            <label for="search-User"></label>
+            <input class="search" id="search-User" type="text" placeholder="username">
+            <button class="search-button">Search</button>
+          </form>
+        </fieldset>
+      </div>
+    </div>
+
+    <div id="request" class="subcontent">
+      <div class="media-scroller">
+        <div id="contents3"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="myClients" class="tabcontent">
+    <form id="client-search">
+      <input   class="search" type="text" placeholder="Client">
+      <button class="search-button">Search</button>
+    </form>
+    <div id="client-holder">
+      <div>
+        <div class="client-card">
+          <div>Username</div>
+          <hr>
+          <div>First name</div>
+          <hr>
+          <div>Last name</div>
+          <hr>
+          <div>first.Last@email.com</div>
+          <hr>
+          <div>Bio</div>
+        </div>
+      </div>
+      <div>
+        <div class="client-card">
+          <div>Username</div>
+          <hr>
+          <div>First name</div>
+          <hr>
+          <div>Last name</div>
+          <hr>
+          <div>first.Last@email.com</div>
+          <hr>
+          <div>Bio</div>
+        </div>
+      </div>
+      <div>
+        <div class="client-card">
+          <div>Username</div>
+          <hr>
+          <div>First name</div>
+          <hr>
+          <div>Last name</div>
+          <hr>
+          <div>first.Last@email.com</div>
+          <hr>
+          <div>Bio</div>
+        </div>
+      </div>
+      <div>
+        <div class="client-card">
+          <div>Username</div>
+          <hr>
+          <div>First name</div>
+          <hr>
+          <div>Last name</div>
+          <hr>
+          <div>first.Last@email.com</div>
+          <hr>
+          <div>Bio</div>
+        </div>
+      </div>
+      <div>
+        <div class="client-card">
+          <div>Username</div>
+          <hr>
+          <div>First name</div>
+          <hr>
+          <div>Last name</div>
+          <hr>
+          <div>first.Last@email.com</div>
+          <hr>
+          <div>Bio</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="Personal-Stats" class="tabcontent">
+    <div id="stats">
+      <div id="stats-holder">
+        <div>
+          <div id="injury-title" class="stats-title">Injury Report:</div>
+          <div id="injury-scroller">
+            <div class="injury-stat-card">
+              <div>Status:current</div>
+              <P>date entered:4/7/23</P>
+              <p>Minor pec Strain</p>
+            </div>
+            <div class="injury-stat-card">
+              <div>Status:past</div>
+              <P>date entered:4/7/23</P>
+              <p>torn bicep</p>
+            </div>
+            <div class="injury-stat-card">
+              <div>Status:past</div>
+              <P>date entered:4/7/23</P>
+              <p>knee tendonitis</p>
+            </div>
+            <div class="injury-stat-card">
+              <div>Status:past</div>
+              <P>date entered:4/7/23</P>
+              <p>glute strain</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="stats-title">Fatigue Rating:</div>
+          <div class="personal-stat-card">
+            <div>Overall:3/5</div>
+            <hr>
+            <div>Sunday:3</div>
+            <hr>
+            <div>Monday:2</div>
+            <hr>
+            <div>Tuesday:2</div>
+            <hr>
+            <div>Wednesday:4</div>
+            <hr>
+            <div>Thursday:5</div>
+            <hr>
+            <div>Friday:2</div>
+            <hr>
+            <div>Saturday:3</div>
+          </div>
+        </div>
+        <div>
+          <div class="stats-title">Sleep Rating:</div>
+          <div class="personal-stat-card">
+
+            <div> Overall:4/5</div>
+            <hr>
+            <div>
+              <div>Sunday:3</div>
+              <hr>
+              <div>Monday:2</div>
+              <hr>
+              <div>Tuesday:2</div>
+              <hr>
+              <div>Wednesday:4</div>
+              <hr>
+              <div>Thursday:5</div>
+              <hr>
+              <div>Friday:2</div>
+              <hr>
+              <div>Saturday:3</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="stats-title">Charts:</div>
+        <div id="chart-scroller">
+          <div>
+            <div class="chart-title">Body Fat %</div>
+            <img src="img/chart.png">
+          </div>
+          <div>
+            <div class="chart-title">Body Weight</div>
+            <img src="img/chart.png">
+          </div>
+          <div>
+            <div class="chart-title">Squat</div>
+            <img src="img/chart.png">
+          </div>
+          <div>
+            <div class="chart-title">Bench</div>
+            <img src="img/chart.png">
+          </div>
+          <div>
+            <div class="chart-title">Deadlift</div>
+            <img src="img/chart.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
