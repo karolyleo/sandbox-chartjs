@@ -125,7 +125,7 @@ function openCity2(evt, cityName) {
         for (let i = 0; i < messages.length; i++) {
             let htmlContent = document.querySelector(`#contents`);
             html += `
-<div class="card">
+<div class="movie-card">
             <h3 class="title-button">${messages[i].active} &nbsp;${messages[i].User}</h3>
          <ul id="messages" style="list-style: none; font-size: larger">
              <li>${messages[i].post}</li>
@@ -141,7 +141,7 @@ function openCity2(evt, cityName) {
         for (let i = 0; i < request.length; i++) {
             let htmlContent = document.querySelector(`#contents3`);
             html += `
-<div class="card">
+<div class="movie-card">
             <h3 class="title-button">${request[i].active} &nbsp;${request[i].User}</h3>
          <ul id="request-list">
              <li><button id="request-button">${request[i].accept}</button></li>&nbsp;&nbsp;
